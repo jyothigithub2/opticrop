@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OptiCrop - Crop Recommendation</title>
+</head>
+<body>
+
+    <h1>OptiCrop - Crop Recommendation System</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>Nitrogen (N)</label><br>
+        <input type="number" name="N" required><br><br>
+
+        <label>Phosphorous (P)</label><br>
+        <input type="number" name="P" required><br><br>
+
+        <label>Potassium (K)</label><br>
+        <input type="number" name="K" required><br><br>
+
+        <label>Temperature</label><br>
+        <input type="number" step="any" name="temperature" required><br><br>
+
+        <label>Humidity</label><br>
+        <input type="number" step="any" name="humidity" required><br><br>
+
+        <label>pH</label><br>
+        <input type="number" step="any" name="ph" required><br><br>
+
+        <label>Rainfall</label><br>
+        <input type="number" step="any" name="rainfall" required><br><br>
+
+        <input type="submit" value="Predict Crop">
+
+    </form>
+
+</body>
+</html>
