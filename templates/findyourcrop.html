@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Crop</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a class="active" href="/findyourcrop">Find Your Crop</a>
+</div>
+<section class="crop-bg">
+<div class="form-container">
+<h1>Find Your Best Crop Here</h1>
+<p>Please enter the environmental conditions below.</p>
+<form action="/predict" method="POST">
+<input type="number" name="nitrogen" placeholder="Nitrogen (N)" required>
+<input type="number" name="phosphorous" placeholder="Phosphorous (P)" required>
+<input type="number" name="potassium" placeholder="Potassium (K)" required>
+<input type="number" name="temperature" placeholder="Temperature (°C)" step="any" required>
+<input type="number" name="humidity" placeholder="Humidity (%)" step="any" required>
+<input type="number" name="ph" placeholder="pH Value" step="any" required>
+<input type="number" name="rainfall" placeholder="Rainfall (mm)" step="any" required>
+<button type="submit">Predict Crop</button>
+</form>
+{% if prediction_text %}
+<div class="result">
+<h2>{{ prediction_text }}</h2>
+</div>
+{% endif %}
+</div>
+</section>
+</body>
+</html>

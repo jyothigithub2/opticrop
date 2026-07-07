@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About OptiCrop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+    <a href="/">Home</a>
+    <a class="active" href="/about">About</a>
+    <a href="/findyourcrop">Find Your Crop</a>
+</div>
+<section class="about-bg">
+<div class="about-overlay">
+<h1>About OptiCrop</h1>
+<h3>Smart Agricultural Production Optimization Engine</h3>
+<p>
+<strong>OptiCrop</strong> is a Smart Agricultural Production Optimization Engine
+developed using Machine Learning.
+</p>
+<p>
+This application predicts the most suitable crop based on
+Nitrogen, Phosphorous, Potassium, Temperature,
+Humidity, pH and Rainfall.
+</p>
+<ul>
+<li>🌱 Nitrogen (N)</li>
+<li>🌾 Phosphorous (P)</li>
+<li>🍃 Potassium (K)</li>
+<li>🌡 Temperature</li>
+<li>💧 Humidity</li>
+<li>⚗ pH Value</li>
+<li>🌧 Rainfall</li>
+</ul>
+<p>
+The objective of this project is to improve agricultural productivity
+and help farmers select the most suitable crop using Artificial
+Intelligence and Machine Learning.
+</p>
+<h3>Find Your Crop Page</h3>
+<p>
+Clicking <strong>Find Your Crop</strong> redirects to the prediction page.
+Enter the environmental conditions and click
+<strong>Predict</strong> to receive the recommended crop.
+</p>
+<a href="/findyourcrop" class="btn-get-started">
+Get Started
+</a>
+</div>
+</section>
+</body>
+</html>
