@@ -94,7 +94,6 @@ plt.show()
 print("Descriptive Analysis")
 print(df.describe())
 print(df.isnull().sum())
-
 # Dataset Information
 print("\n===== Dataset Information =====")
 df.info()
